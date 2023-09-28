@@ -15,7 +15,7 @@ body {
     flex-wrap: nowrap;
     flex: 1 1;
     align-items: baseline;
-    border-bottom: 2px solid #29303a;
+    border-bottom: 2px solid #2e2e2e;
 }
 
 header h1 {
@@ -23,6 +23,7 @@ header h1 {
     flex: 1 1;
     font-size: 50px;
     white-space: nowrap;
+    color: #2e2e2e;
 }
 
 a{
@@ -60,7 +61,7 @@ ul{
 }
 
 .about-me h2{
-    color:#d9aeea;
+    color:4e4e4e;
     width: 120px;
     height: 250px;
     border-right: solid;
@@ -76,7 +77,7 @@ main {
 
 
 main h2{
-    color: #d9aeea;
+    color: 4e4e4e;
     width: 120px;
     height: 400px;
     border-right: solid;
