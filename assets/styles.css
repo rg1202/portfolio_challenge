@@ -37,7 +37,7 @@ a{
 }
 
 a:hover {
-    box-shadow: inset 100px 0 0 0 #8e8e8e;
+    box-shadow: inset 100px 0 0 0 #6e6e6e;
     color: white;
   }
 
@@ -107,37 +107,46 @@ main h2{
     grid-column: span 2; /* Span 2 columns for the big card */
     border: solid;
     background-image: url(images/pexels-rafael-guajardo-604684.jpg);
-    
     background-repeat: no-repeat;
     background-size: cover;
     width: 700px;
     height: 600px;
     margin-top: 25px;
-    flex-wrap: nowrap
+    flex-wrap: nowrap;
+    color: white;  
+    text-align: center;
 }
 
 .card2{
     background-image: url(images/pexels-ahmed-adly-1270184.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;  
+    text-align: center;
 }
 
 .card3{
     background-image: url(images/pexels-elīna-arāja-3377414.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    color: #2e2e2e; 
+    text-align: center;
 }
 
 .card4{
     background-image: url(images/pexels-tatiana-fet-1105766.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    color: #2e2e2e; 
+    text-align: center;
 }
 
 .card5{
     background-image: url(images/pexels-andrey-grushnikov-707676.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    color: #2e2e2e;  
+    text-align: center;
 }
 
 
@@ -159,7 +168,33 @@ main h2{
     border: solid;
     margin: 2px 0;
     background-color: #6e6e6e;
+    box-shadow: 0 0 0 transparent;
+    transition: box-shadow 0.7s ease; /* Add a smooth transition effect */
+    transition: transform 0.3s ease;
+}
 
+.card:hover {
+    /* Apply the glow effect when hovering */
+    box-shadow: 0 0 30px 5px #2e2e2e; /* Adjust the values as needed */
+    animation: wiggle 0.5s ease infinite;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(.25deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-.25deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 main h2{
