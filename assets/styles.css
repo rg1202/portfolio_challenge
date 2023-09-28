@@ -87,7 +87,8 @@ main h2{
 
 
 
-.big-card {
+.card.big-card {
+    grid-column: span 2; /* Span 2 columns for the big card */
     border: solid;
     background-image: url(images/pexels-dana-tentis-370799.jpg);
     background-repeat: no-repeat;
@@ -97,19 +98,20 @@ main h2{
 }
 
 
-.child-cards {
-    display: flex;
-    gap: 10px;
-    margin-left: 120px;
-    margin-top: 0;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px; /* Adjust the gap as needed */
+    width: 300px; /* Adjust the width as needed */
 
     
 }
 
-.small-card{
+.card{
     width: 200px;
     height: 150px;
     border: solid;
+    margin: 5px 0;
 
 }
 
