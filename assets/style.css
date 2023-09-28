@@ -16,7 +16,7 @@ body {
     flex-wrap: nowrap;
     flex: 1 1;
     align-items: baseline;
-    border-bottom: 2px solid rgb(41, 48, 58);
+    border-bottom: 2px solid #29303a;
 }
 
 header h1 {
@@ -57,29 +57,71 @@ ul{
 
 .about-me p{
     flex: 1;
-    margin-right: 40px;
+    flex-wrap: nowrap;
 }
 
-.work {
+.about-me h2{
+    color:#d9aeea;
+    width: 120px;
+    height: 250px;
+    border-right: solid;
+    border-radius: 0 10px
+}
+
+main {
     display: flex;
+    flex-wrap: wrap;
+    margin: 
+    
 }
 
-.work h2 {
-    margin-right: 45px;
+.small-card {
+    
 }
+
+main h2{
+    color: #d9aeea;
+    width: 120px;
+    height: 400px;
+    border-right: solid;
+    border-radius: 0 10px;
+    margin-right: auto;
+}
+
+
 
 .big-card {
-    display: flex;
     border: solid;
     background-image: url(/assets/images/pexels-dana-tentis-370799.jpg);
     background-repeat: no-repeat;
     background-image: cover;
     width: 400px;
-    height: 300px;
-    justify-content: center;
+    height: 300px
+
 }
 
+.small-card{
+    width: 200px;
+    height: 150px;
+    border: solid;
+    margin: 0px;
+}
 
+.cardsection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin:10px;
+    margin-left: 130px;
+}
+
+.cardsection h2{
+    color: #d9aeea;
+    width: 120px;
+    height: 400px;
+    border-right: solid;
+    border-radius: 0 0px;
+}
 
 
 @media (max-width: 720px) {
@@ -95,7 +137,23 @@ ul{
         text-align: center;
     }
     .about-me p{
-        margin: 0 50px
+
 
     }    
+    .work {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .big-card {
+        display: flex;
+        border: solid;
+        background-image: url(/assets/images/pexels-dana-tentis-370799.jpg);
+        background-repeat: no-repeat;
+        background-image: cover;
+        width: 150px;
+        height: 150px;
+        justify-content: left;
+    }
 }
