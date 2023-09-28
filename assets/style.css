@@ -15,6 +15,7 @@ body {
     display: flex;
     flex: 1 1;
     align-items: center;
+    border-bottom: 2px solid rgb(41, 48, 58);
     
 }
 
@@ -28,10 +29,12 @@ header h1 {
     display: flex;
     flex: 1 1;
     font-size: 50px;
+    color:rgba(66, 110, 161, 0.552)
 }
 
 a{
     text-decoration: none;
+    color:rgba(66, 110, 161, 0.552)
 }
 
 
@@ -57,76 +60,112 @@ nav ul{
 .about-me {
     display: flex;
     justify-content: left;
-    align-items: center;
+    align-items: ;/* Center vertically */
+    margin-right: 20px;/* Add a right margin */
 }
 
 .about-me h2 {
-    white-space: nowrap;
-    flex-shrink: 0;
+    font-size: 50px;
+    white-space: nowrap;/* Prevent wrapping */
+    flex-shrink: 0;/* Prevent shrinking */
     margin-right: 50px;
-
+    margin-bottom: auto;
 }
 
 .about-me p {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: left;
+    
+    
 }
 
 .about-me img{
     max-width: 200px;
     max-height: 250px;
     padding: 20px;
+    margin-bottom: auto;
+}
+
+.work {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    
+    
+}
+
+.work h2 {
+    font-size: 50px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-right: 100px;
+    margin-bottom: auto;
+
+}
+
+.work-card {
+    background-size: cover;
+    flex-basis: calc(50% - 5px);
+    height: 100px;
+    width: 300px;
+    display: flex;
+    border: 1px solid;
+
+    
 }
 
 
-.work {
+
+
+.work-card.big {
+    display: flex;
+    background-image: url('/assets/images/pexels-dana-tentis-370799.jpg'); 
+    background-size: cover; /* Set a cover background size for the "big" card */
+    width: 600px; /* Set a different width for the "big" card */
+    height: 400px; /* Set a different height for the "big" card */
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.work-card.c2 {
+    background-image: url(/assets/images/pexels-david-bartus-963278.jpg); /* Replace with the path to your image for card 2 */
+}
+
+.work-card.c3 {
+    background-image: url(/assets/images/pexels-felix-mittermeier-956999.jpg); /* Replace with the path to your image for card 3 */
+}
+
+.work-card.c4 {
+    background-image: url(/assets/images/pexels-miguel-á-padriñán-255379.jpg); /* Replace with the path to your image for card 4 */
+}
+
+.work-card.c5 {
+    background-image: url(/assets/images/pexels-rovenimagescom-949587.jpg); /* Replace with the path to your image for card 5 */
+}
+
+
+.resume {
     display: flex;
     flex: 1 1;
     border: 1px solid;
     margin: 10px;
 }
 
-.resume {
-        display: flex;
-        flex: 1 1;
-        border: 1px solid;
-        margin: 10px;
-    }
-
 .contact-me {
     display: flex;
-        flex: 1 1;
-        border: 1px solid;
-        margin: 10px;
-    }
-
-
-.work h2 {
-    white-space: nowrap;
-    flex-shrink: 0;
-    margin-right: 50px;
-}
-
-.work-card {
-    display: flex;
+    flex: 1 1;
     border: 1px solid;
-    padding: 3px;
-    margin-right: auto;
+    margin: 10px;
 }
 
-.project {
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    text-align: center;
-    color: white;
-}
-
-.work-card p {
-    text-align: center;
-    color: white;
-    height: 100px;
-    width: 300px;
+h2 {
+    font-size: 50px;
 }
 
 @media (width < 720px) {
