@@ -4,107 +4,98 @@
 }
 
 body {
-    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background-image: linear-gradient(to bottom, #09203f 0%, #537895 100%);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; /*Keep the background fixed while scrolling */
+    background-attachment: fixed; 
     font-family: 'Oswald', sans-serif;
 }
 
-h2 {
-    font-size: 45px;
-}
 .header-wrapper {
     display: flex;
+    flex-wrap: nowrap;
     flex: 1 1;
-    align-items: center;
+    align-items: baseline;
     border-bottom: 2px solid rgb(41, 48, 58);
-    
 }
-
 
 header h1 {
     display: flex;
     flex: 1 1;
     font-size: 50px;
-    
+    white-space: nowrap;
 }
 
 a{
     text-decoration: none;
 }
 
-
 li{
     display: flex;
+    flex-wrap: nowrap;
     list-style-type: none;
-    font-size: 20px;
     padding-right: 50px; 
-    font-size: 30px; 
+    font-size: 20px; 
+    white-space: nowrap;
 }
 
 ul{
     display: flex;
-    flex-wrap: nowrap;
 }
+
 
 .about-me {
     display: flex;
+    flex-wrap: nowrap;
 }
-
-.about-me h2 {
-    border-right: solid;
-    white-space: nowrap;
-    width:20%;
+.about-me img{
+    max-width: 240px;
+    max-height: 240px;
+    padding: 10px;
+    flex: 0 0
 }
 
 .about-me p{
-    display: flex;
-
-}
-
-.contact-me {
-    display: flex;  
-    align-items: center;
-}
-
-.resume h2 {
-    border-right: solid;
-    white-space: nowrap;
-    width: 20%;
+    flex: 1;
+    margin-right: 40px;
 }
 
 .work {
     display: flex;
 }
 
-.work .work-card {
-    display: flex;
-    flex-wrap: nowrap;
-    flex: 1 1;
-    justify-content: center;
-}
-
 .work h2 {
-    border-right: solid;
-    white-space: nowrap;
-    width: 20%;
+    margin-right: 45px;
 }
 
-
-
-.contact-me h2 {
-    border-right: solid;
-    white-space: nowrap;
-    width: 20%;
-}
-
-.contact-me ul{
+.big-card {
     display: flex;
-    flex-wrap: nowrap;
-    flex: 1 1;
+    border: solid;
+    background-image: url(/assets/images/pexels-dana-tentis-370799.jpg);
+    background-repeat: no-repeat;
+    background-image: cover;
+    width: 400px;
+    height: 300px;
     justify-content: center;
-
 }
 
 
+
+
+@media (max-width: 720px) {
+    .header-wrapper {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .about-me p{
+        margin: 0 50px
+
+    }    
+}
