@@ -73,7 +73,7 @@ ul{
     flex: 2;
     text-align: left;
     margin-right: 15px;
-    line-height: 25px;
+    font-size: 25px;
 }
 
 .about-me h2{
@@ -226,6 +226,7 @@ main h2{
 .resume-wrapper p {
     margin-left: 40px;
     margin-right: 15px;
+    font-size: 25px;
 }
 
 
