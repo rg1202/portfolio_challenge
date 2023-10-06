@@ -36,7 +36,7 @@ a{
 }
 
 a:hover {
-    box-shadow: inset 200px 0 0 0 #6e6e6e;
+    box-shadow: inset 650px 0 0 0 #6e6e6e;
     border-bottom: solid 1px #2e2e2e;
     color: white;
   }
@@ -85,6 +85,12 @@ ul{
     margin-left: 10px;
     font-size: 30px;
     padding-left: 10px;
+}
+
+.dev  {
+    margin-left: 150px;
+    text-align: left;
+    font-size: 50px;
 }
 
 main {
@@ -228,7 +234,6 @@ main h2{
     margin-right: 15px;
     font-size: 25px;
 }
-
 
 
 .contact-me {
